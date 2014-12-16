@@ -1,4 +1,7 @@
 # Don’t commit the following directories created by pub.
+.DS_Store
+.idea
+.pub/
 build/
 packages/
 .buildlog
