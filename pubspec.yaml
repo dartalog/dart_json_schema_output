@@ -2,6 +2,6 @@ name: json_schema_output
 version: 0.0.1
 description: A library useful for applications or for sharing on pub.dartlang.org.
 environment:
-  sdk: 1.8.3
+  sdk: 1.8.5
 dev_dependencies:
   unittest: any
