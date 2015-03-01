@@ -79,7 +79,7 @@ class JsonSchemaTypeEntry extends JsonSchemaEntry {
   // End numeric-related properties
   
   // Array-related properties
-  final List<JsonSchemaTypeEntry> _arrayItemsSchemas = new List<JsonSchemaTypeEntry>();
+  final List<JsonSchemaTypeEntry> arrayItemsSchemas = new List<JsonSchemaTypeEntry>();
   int _minItems = null, _maxItems = null;
   bool uniqueItems = false;
   
@@ -204,11 +204,11 @@ class JsonSchemaTypeEntry extends JsonSchemaEntry {
     }
     
     if(_types.contains(JsonSchemaType.ARRAY)) {
-      if(_arrayItemsSchemas.length>0) {
-        if(_arrayItemsSchemas.length==0) {
-          output["items"] = _arrayItemsSchemas[0];
+      if(arrayItemsSchemas.length>0) {
+        if(arrayItemsSchemas.length==0) {
+          output["items"] = arrayItemsSchemas[0];
         } else {
-          output["items"] = _arrayItemsSchemas;
+          output["items"] = arrayItemsSchemas;
         }
       }
       if(_minItems!=null) {
